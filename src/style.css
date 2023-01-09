@@ -1,0 +1,73 @@
+h1 {
+  font-family: kdam thmor pro;
+  font-weight: lighter;
+  font-size: 58px;
+  margin: 10px 50px;
+}
+
+h2 {
+  text-align: center;
+  font-family: montserrat alternates;
+  font-weight: 500;
+  font-size: 57px;
+}
+
+ul {
+  font-family: montserrat alternates;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+}
+
+.main-container {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid #5e596c;
+  border-radius: 106px;
+  padding: 12px 0;
+}
+
+.current-weather {
+  font-size: 140px;
+  text-align: center;
+}
+
+.units {
+  vertical-align: text-top;
+  font-size: 22px;
+}
+
+.vertical-line {
+  border-left: 2px solid #332f2f;
+}
+
+.upcoming-forecast {
+  margin-left: 20%;
+  padding: 1.5em;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.footer {
+  position: inherit;
+  margin-left: 66%;
+  font-size: 12px;
+}
+
+.footer a {
+  font-size: 18px;
+}
+
+#fahrenheit {
+  text-decoration: none;
+}
+
+#celsius {
+  text-decoration: none;
+}
