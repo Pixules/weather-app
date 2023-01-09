@@ -29,12 +29,12 @@ i {
 
 .container {
   margin-bottom: 1em;
-  max-width: 700px;
+  max-width: 670px;
 }
 
 .main-container {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  max-width: 720px;
+  max-width: 690px;
   margin: 0 auto;
   border: 2px solid #5e596c;
   border-radius: 106px;
