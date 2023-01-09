@@ -81,3 +81,8 @@ i {
 #celsius {
   text-decoration: none;
 }
+
+#feels {
+  font-size: 19px;
+  font-weight: 400;
+}

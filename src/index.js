@@ -42,6 +42,9 @@ function showWeatherConditions(response) {
     response.data.wind.speed
   );
   document.querySelector("#humid").innerHTML = response.data.main.humidity;
+  document.querySelector("#feels").innerHTML = Math.round(
+    response.data.main.feels_like
+  );
 }
 
 function searchCity(city) {
