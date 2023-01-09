@@ -23,6 +23,10 @@ li {
   list-style: none;
 }
 
+i {
+  font-size: 18px;
+}
+
 .main-container {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   max-width: 800px;
@@ -61,7 +65,8 @@ li {
 }
 
 .footer a {
-  font-size: 18px;
+  font-size: 12px;
+  text-decoration: none;
 }
 
 #fahrenheit {
