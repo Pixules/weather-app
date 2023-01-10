@@ -45,10 +45,6 @@ i {
   padding: 12px 0;
 }
 
-#current-weather {
-  width: 250px;
-}
-
 .units {
   vertical-align: text-top;
   font-size: 22px;
@@ -88,4 +84,8 @@ i {
 #feels {
   font-size: 19px;
   font-weight: 400;
+}
+
+#current-weather {
+  width: 200px;
 }
