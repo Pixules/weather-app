@@ -33,7 +33,11 @@ i {
 }
 
 .main-container {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(248, 213, 214) 0%,
+    rgb(243, 242, 229) 90%
+  );
   max-width: 690px;
   margin: 0 auto;
   border: 2px solid #5e596c;
@@ -41,9 +45,8 @@ i {
   padding: 12px 0;
 }
 
-.current-weather {
-  font-size: 140px;
-  text-align: center;
+#current-weather {
+  width: 250px;
 }
 
 .units {
