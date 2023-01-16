@@ -33,9 +33,10 @@ updateDate();
 
 function showWeatherConditions(response) {
   document.querySelector("#current-location").innerHTML = response.data.name;
-  document.querySelector("#current-temp").innerHTML = Math.round(
-    response.data.main.temp
-  );
+
+  celsiusTemperature = response.data.main.temp;
+  document.querySelector("#current-temp").innerHTML =
+    Math.round(celsiusTemperature);
   document.querySelector("#current-conditions").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#wind-speed").innerHTML = Math.round(
@@ -86,5 +87,30 @@ citySearch.addEventListener("submit", search);
 
 let current = document.querySelector("#current-location-button");
 current.addEventListener("click", getCurrentLocation);
+
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#current-temp");
+  celsiusClick.classList.remove("active");
+  fahrenheitClick.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#current-temp");
+  celsiusClick.classList.add("active");
+  fahrenheitClick.classList.remove("active");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
+let fahrenheitClick = document.querySelector("#fahrenheit");
+fahrenheitClick.addEventListener("click", showFahrenheitTemp);
+
+let celsiusClick = document.querySelector("#celsius");
+celsiusClick.addEventListener("click", showCelsiusTemp);
 
 searchCity("Liverpool");

@@ -50,6 +50,15 @@ i {
   font-size: 22px;
 }
 
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  color: black;
+}
+
 .vertical-line {
   border-left: 2px solid #332f2f;
 }
@@ -82,7 +91,7 @@ i {
 }
 
 #feels {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 400;
 }
 
