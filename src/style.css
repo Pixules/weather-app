@@ -29,7 +29,7 @@ i {
 
 .container {
   margin-bottom: 1em;
-  max-width: 670px;
+  max-width: 655px;
 }
 
 .main-container {
@@ -38,7 +38,7 @@ i {
     rgb(248, 213, 214) 0%,
     rgb(243, 242, 229) 90%
   );
-  max-width: 690px;
+  max-width: 670px;
   margin: 0 auto;
   border: 2px solid #5e596c;
   border-radius: 106px;
@@ -87,5 +87,5 @@ i {
 }
 
 #current-weather {
-  width: 200px;
+  width: 150px;
 }
