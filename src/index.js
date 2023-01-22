@@ -94,14 +94,13 @@ function searchCity(city) {
 
   axios.get(apiUrl).then(showWeatherConditions);
 
-  let forecastUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}$units=${units}`;
+  let forecastUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=${units}`;
   axios.get(forecastUrl).then(displayForecast);
 }
 
 function search(event) {
   event.preventDefault();
   let city = document.querySelector("#city-input").value;
-
   searchCity(city);
 }
 
@@ -155,3 +154,4 @@ let celsiusClick = document.querySelector("#celsius");
 celsiusClick.addEventListener("click", showCelsiusTemp);
 
 searchCity("Liverpool");
+displayForecast();
