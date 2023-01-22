@@ -53,7 +53,6 @@ function showWeatherConditions(response) {
 }
 
 function searchCity(city) {
-  let apiKey = "b2d93ce3a9a20cf40a803744bbt2da8o";
   let units = "metric";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
 
@@ -69,7 +68,7 @@ function search(event) {
 function clickedLocation(position) {
   let lat = position.coords.latitude;
   let long = position.coords.longitude;
-  let apiKey = "b2d93ce3a9a20cf40a803744bbt2da8o";
+
   let units = "metric";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${long}&lat=${lat}&key=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showWeatherConditions);
@@ -78,6 +77,8 @@ function clickedLocation(position) {
 function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(clickedLocation);
 }
+
+const apiKey = "b2d93ce3a9a20cf40a803744bbt2da8o";
 
 let citySearch = document.querySelector("#search-form");
 citySearch.addEventListener("submit", search);
