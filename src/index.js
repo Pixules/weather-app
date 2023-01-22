@@ -51,7 +51,7 @@ function displayForecast(response) {
         `
       <div class="col-2"><div class="forecast-date">
             ${formatDay(forecastDay.time)}</div>
-            <img src="${forecastDay.condition.icon_url}">
+            <img class="forecast-icon" src="${forecastDay.condition.icon_url}">
             <div class="upcoming-temperature">
              ${Math.round(forecastDay.temperature.maximum)}° /
             <span class="minimum-temp"> ${Math.round(
