@@ -47,6 +47,8 @@ function showWeatherConditions(response) {
   document.querySelector("#feels").innerHTML = Math.round(
     response.data.temperature.feels_like
   );
+  document.querySelector("#pressure").innerHTML =
+    response.data.temperature.pressure;
   let weatherIcon = document.querySelector("#current-weather");
   let iconURL = response.data.condition.icon_url;
   weatherIcon.innerHTML = `<img src=${iconURL}>`;
