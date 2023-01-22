@@ -91,9 +91,7 @@ function showWeatherConditions(response) {
 
 function searchCity(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
-
   axios.get(apiUrl).then(showWeatherConditions);
-
   let forecastUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=${units}`;
   axios.get(forecastUrl).then(displayForecast);
 }
