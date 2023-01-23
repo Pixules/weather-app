@@ -12,8 +12,6 @@ function updateTime() {
   return (currentTime.innerHTML = `${hours}:${minutes}`);
 }
 
-setInterval(updateTime, 60000);
-
 function updateDate() {
   let currentDate = new Date();
   let days = [
